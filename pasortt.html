@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            box-shadow: 10px 10px 10px grey;
+            width: 600px;
+            margin: 50px auto;
+            /* background-color: rgb(233, 218, 218); */
+            border: 1px solid rgb(209, 206, 206);
+            border-radius: 10px;
+        }
+        .header {
+            height: 100px;
+            display: flex;
+            border-bottom: 1px solid rgb(209, 206, 206);
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            /* background-color: aqua; */
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        .submit {
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            width: 200px;
+            height: 40px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .submit:hover {
+            background-color: green;
+        }
+        .p{
+            margin: 0;
+            padding: 0;
+        }
+        
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Passport Validation Controller</div>
+        <div class="body">
+            <input type="text" id="id" placeholder="Enter your ID"><p class="p p1"></p>
+            <input type="text" id="name" placeholder="Enter your fullname"><p class="p p2"></p>
+            <input type="text" id="job" placeholder="What is your job"><p class="p p3"></p>
+            <input type="date" id="date" placeholder="Enter your birthday"><p class="p p4"></p>
+            <input type="text" id="address" placeho lder="Enter your Address"><p class="p p5"></p>
+            <button class="submit">Check</button>
+            <h1 id="not"></h1>
+        </div>
+    </div>
+    <script src="pasport.js"></script>
+</body>
+</html>
